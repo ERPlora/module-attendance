@@ -29,3 +29,16 @@ PERMISSIONS = [
 'attendance.delete_attendancerecord',
 'attendance.manage_settings',
 ]
+
+ROLE_PERMISSIONS = {
+    "admin": ["*"],
+    "manager": [
+        "add_attendancerecord",
+        "change_attendancerecord",
+        "view_attendancerecord",
+    ],
+    "employee": [
+        "add_attendancerecord",
+        "view_attendancerecord",
+    ],
+}
