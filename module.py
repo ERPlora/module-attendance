@@ -2,8 +2,8 @@ from django.utils.translation import gettext_lazy as _
 
 MODULE_ID = 'attendance'
 MODULE_NAME = _('Attendance & Clock-in')
-MODULE_VERSION = '1.0.0'
-MODULE_ICON = 'time-outline'
+MODULE_VERSION = '1.0.1'
+MODULE_ICON = 'material:schedule'
 MODULE_DESCRIPTION = _('Employee attendance tracking and clock-in/out')
 MODULE_AUTHOR = 'ERPlora'
 MODULE_CATEGORY = 'hr'
