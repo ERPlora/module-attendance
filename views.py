@@ -16,6 +16,7 @@ from apps.core.services import export_to_csv, export_to_excel
 from apps.modules_runtime.navigation import with_module_nav
 
 from .models import AttendanceRecord
+from apps.core.scheduled_tasks import get_module_scheduled_tasks
 
 PER_PAGE_CHOICES = [12, 24, 48, 96, 0]
 
@@ -187,5 +188,6 @@ def attendance_records_bulk_action(request):
 @with_module_nav('attendance', 'settings')
 @htmx_view('attendance/pages/settings.html', 'attendance/partials/settings_content.html')
 def settings_view(request):
-    return {}
+    return {
+        'scheduled_tasks': get_module_scheduled_tasks('attendance'),}
 
