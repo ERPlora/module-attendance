@@ -43,3 +43,11 @@ ROLE_PERMISSIONS = {
         "view_attendancerecord",
     ],
 }
+
+SCHEDULED_TASKS = [
+    {
+        'task': 'attendance.generate_monthly_report',
+        'cron': '0 5 1 * *',
+        'description': 'Generate monthly attendance report',
+    },
+]
