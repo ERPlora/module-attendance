@@ -7,6 +7,7 @@ MODULE_ICON = 'material:schedule'
 MODULE_DESCRIPTION = _('Employee attendance tracking and clock-in/out')
 MODULE_AUTHOR = 'ERPlora'
 MODULE_CATEGORY = 'hr'
+HAS_MODELS = True
 
 MENU = {
     'label': _('Attendance & Clock-in'),
